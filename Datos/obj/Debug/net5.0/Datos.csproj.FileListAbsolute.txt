@@ -1,0 +1,15 @@
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\bin\Debug\net5.0\Datos.deps.json
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\bin\Debug\net5.0\Datos.dll
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\bin\Debug\net5.0\ref\Datos.dll
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\bin\Debug\net5.0\Datos.pdb
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\obj\Debug\net5.0\Datos.csprojAssemblyReference.cache
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\obj\Debug\net5.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\obj\Debug\net5.0\Datos.AssemblyInfoInputs.cache
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\obj\Debug\net5.0\Datos.AssemblyInfo.cs
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\obj\Debug\net5.0\Datos.csproj.CoreCompileInputs.cache
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\obj\Debug\net5.0\Datos.dll
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\obj\Debug\net5.0\ref\Datos.dll
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\obj\Debug\net5.0\Datos.pdb
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\bin\Debug\net5.0\Dominio.dll
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\bin\Debug\net5.0\Dominio.pdb
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Datos\obj\Debug\net5.0\Datos.csproj.CopyComplete

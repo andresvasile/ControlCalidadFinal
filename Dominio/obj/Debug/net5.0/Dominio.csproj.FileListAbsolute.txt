@@ -1,0 +1,12 @@
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Dominio\bin\Debug\net5.0\Dominio.deps.json
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Dominio\bin\Debug\net5.0\Dominio.dll
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Dominio\bin\Debug\net5.0\ref\Dominio.dll
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Dominio\bin\Debug\net5.0\Dominio.pdb
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Dominio\obj\Debug\net5.0\Dominio.csprojAssemblyReference.cache
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Dominio\obj\Debug\net5.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfoInputs.cache
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfo.cs
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Dominio\obj\Debug\net5.0\Dominio.csproj.CoreCompileInputs.cache
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Dominio\obj\Debug\net5.0\Dominio.dll
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Dominio\obj\Debug\net5.0\ref\Dominio.dll
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\Dominio\obj\Debug\net5.0\Dominio.pdb
