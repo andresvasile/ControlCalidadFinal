@@ -10,9 +10,7 @@ using Microsoft.AspNetCore.Routing;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class ModelosController : ControllerBase
+    public class ModelosController : BaseApiController
     {
         private readonly IModeloRepository _repoModelos;
 

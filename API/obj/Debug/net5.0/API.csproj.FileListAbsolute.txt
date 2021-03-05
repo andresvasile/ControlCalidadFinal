@@ -63,3 +63,5 @@ E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\API\bin\Debug\net5.
 E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\API\bin\Debug\net5.0\Dominio.dll
 E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\API\bin\Debug\net5.0\Datos.pdb
 E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\API\bin\Debug\net5.0\Dominio.pdb
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\API\bin\Debug\net5.0\AutoMapper.dll
+E:\MiCarpeta\ProyectoControlCalidadFinal\ControlCalidadFinal\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

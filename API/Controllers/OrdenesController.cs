@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API.Dtos;
+using API.Specifications;
+using AutoMapper;
 using Dominio.Entities;
 using Dominio.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -10,34 +13,35 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class OrdenesController : ControllerBase
+    public class OrdenesController : BaseApiController
     {
-        private readonly IOrdenesRepository _repoOrdenes;
-        private readonly IColorRepository _repoColores;
-        private readonly IModeloRepository _repoModelos;
+        private readonly IGenericRepository<OrdenDeProduccion> _repoOrdenes;
+        private readonly IMapper _mapper;
 
-        public OrdenesController(IOrdenesRepository repoOrdenes
-            , IColorRepository repoColores
-            , IModeloRepository repoModelos)
+        public OrdenesController(IGenericRepository<OrdenDeProduccion> repoOrdenes, IMapper mapper)
         {
             _repoOrdenes = repoOrdenes;
-            _repoColores = repoColores;
-            _repoModelos = repoModelos;
+            _mapper = mapper;
         }
 
-        public async Task<ActionResult<List<OrdenDeProduccion>>> GetOrdenesAsync()
+        [HttpGet]
+        public async Task<ActionResult<IReadOnlyList<OrdenDto>>> GetOrdenesAsync()
         {
-            var ordenes = await _repoOrdenes.GetOrdenesAsync();
+            var spec = new OrdenConColoresYModelosSpecification();
 
-            return Ok(ordenes);
+            var ordenes = await _repoOrdenes.ListAsync(spec);
+
+            return Ok(_mapper.Map<IReadOnlyList<OrdenDeProduccion>,IReadOnlyList<OrdenDto>>(ordenes));
         }
 
         [HttpGet("{numero}")]
-        public async Task<ActionResult<OrdenDeProduccion>> GetOrdenAsync(int numero)
+        public async Task<ActionResult<OrdenDto>> GetOrdenAsync(int numero)
         {
-            return await _repoOrdenes.GetOrdenByIdAsync(numero);
+            var spec = new OrdenConColoresYModelosSpecification(numero);
+
+            var ordenDeP= await _repoOrdenes.GetEntityWithSpec(spec);
+
+            return _mapper.Map<OrdenDeProduccion, OrdenDto>(ordenDeP);
         }
 
     }

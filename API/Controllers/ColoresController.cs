@@ -9,26 +9,25 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class ColoresController : ControllerBase
+    public class ColoresController : BaseApiController
     {
-        private readonly IColorRepository _colorRepository;
+        private readonly IGenericRepository<Color> _colorRepository;
 
-        public ColoresController(IColorRepository colorRepository)
+        public ColoresController(IGenericRepository<Color> colorRepository)
         {
             _colorRepository = colorRepository;
         }
+        [HttpGet]
         public async Task<ActionResult<List<Color>>> GetColoresAsync()
         {
-            var colores = await _colorRepository.GetColoresAsync();
+            var colores = await _colorRepository.ListAllAsync();
 
             return Ok(colores);
         }
         [HttpGet("{codigo}")]
         public async Task<ActionResult<Color>> GetColorPorCodigoAsync(int codigo)
         {
-            return await _colorRepository.GetColorByCodigo(codigo);
+            return await _colorRepository.GetByIdAsync(codigo);
         }
 
         
