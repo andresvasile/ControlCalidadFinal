@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Datos.Data;
 using Dominio.Entities;
+using Dominio.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,22 +13,24 @@ namespace API.Controllers
     [ApiController]
     public class ColoresController : ControllerBase
     {
-        private readonly CalidadContext _context;
+        private readonly IColorRepository _colorRepository;
 
-        public ColoresController(CalidadContext context)
+        public ColoresController(IColorRepository colorRepository)
         {
-             _context = context;
+            _colorRepository = colorRepository;
         }
-        public async Task<ActionResult<List<Color>>> GetColores()
+        public async Task<ActionResult<List<Color>>> GetColoresAsync()
         {
-            var colores = await _context.Colores.ToListAsync();
+            var colores = await _colorRepository.GetColoresAsync();
 
-            return colores;
+            return Ok(colores);
         }
         [HttpGet("{codigo}")]
-        public async Task<ActionResult<Color>> GetColor(int codigo)
+        public async Task<ActionResult<Color>> GetColorPorCodigoAsync(int codigo)
         {
-            return await _context.Colores.FindAsync(codigo);
+            return await _colorRepository.GetColorByCodigo(codigo);
         }
+
+        
     }
 }
